@@ -1,0 +1,130 @@
+Power BI is used for creating data visulisation  it gives us pictorial representation
+application: 
+Power BI 
+SSMS
+
+Structure unit of BI
+Data
+DAX (Data analysis expression)
+Report
+
+Important Skills
+MS SQL  -SSMS
+DAX lang of BI
+POWER QUERY lang of BI
+
+JOB POI
+Power apps
+Power automate
+Power  virual agent
+
+or
+AZURE
+
+
+
+Types of modeling
+Discriptive - Describe the data
+Prescriptive -  What will happen if you use any of the method
+Predective
+1
+Certification Must:
+azure
+pl 900
+
+
+
+Calculate(count(table_name),(petal_l >1.5 && sepal_l < 0.5)  || (species =  " Verginica"))
+
+)
+
+concatinate("Hello","World")
+
+
+
+calculate(coount, avg,sum)   hw
+
+
+
+
+
+RLS  = Row Level Security
+CLS = Column Level Security 
+
+
+
+
+
+
+FUNCTION :-
+ 
+1) Upper, = UPPER( column_name )
+
+2) Lower, = LOWER( column_name ) 
+
+3) exact, = EXACT( "String" , "String" ) - ---> Gives true or false if both string matches
+
+4) combinevalue, = COMBINE VALUE ( "," , Col1 , Col2 )  ----> Combine values of two columns of same datatype with seperator " , "
+
+5) value = VALUE( "3" ) -->Gives value in int
+
+6) left = LEFT( column name ,  3 ) ---> gives 1st 3 letters of each row  of that column
+
+7) right  = RIGHT( column name , 3 ) ---> gives last 3 letters of each row  of that column
+
+8) contain_string = Contain_string = CONTAINSSTRING( Column, "string" )  ----> will give true/false value
+
+9) Find_value = FIND( "setosa", iris[species]  ) ----> very complex not to use this
+
+10) fiter = FILTER( table_name, column_name with condiion ) --> it will give us filtered table
+
+11) Calculated = CALCULATED( sum or avg or anything ( colum_name ),FILTER( column name with condition ))
+
+12) concatinate = CONCATENATE( "Hello","World" )-------> Combine two words
+
+13)variable = 
+	var vai = FILTER(iris,iris[species] = "setosa")
+	return CALCULATE(AVERAGE(iris[petal_length]),vai)
+
+14) SUM_X = SUMX(Filter,column name) ----> aggregate value of given column
+
+15) Groupby = GROUPBY( table_name, Column_name )
+
+16) Summarize = SUMMARIZE( table_name, Column_name_to_group, "Name of new Column", function ( column name ))
+
+17) Summarize for two Defining values  = SUMMARIZE( table_name, Column_name_to_group, Column_name_to group, "Name of 1st Column", unction( column name ), "Name of 2nd Column", function( column name ))
+
+18) Variance = VAR.P( column_name )
+
+19) date = FORMAT( today(), blank(), "ep-us" or "ep-gb" ) ---> us = UnitedStates , gb = GreatBritain
+
+20) format = FORMAT(1250, "percent" or "currency" )
+
+21) top = CALCULATETABLE( topn( 10, filter vagere ))
+
+22) count_blank = COUNTBLANK( Column ) 
+
+23) count_blank4 = IF(ISBLANK( COUNTBLANK( iris[species] )),"No blank",COUNTBLANK( iris[species] ))   	 # COUNTBLANK is true when it does not have any blank values if COUNTBLANK is true ISBLANK is also true otherwise it will return else value
+
+24)  concatinate( "Hello","World" )
+
+25) Logical condition in Power BI
+         = if( cond ,"True","False")     # (Condtions,  "true cond" , "else value")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
